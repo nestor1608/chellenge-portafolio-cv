@@ -1,0 +1,237 @@
+
+header {
+    background: url("img/Introduccion-a-la-programacion.jpg") no-repeat fixed;
+    background-size: cover;
+}
+strong{
+    color: gold;
+}
+.porta{
+    font-weight: 700;
+    font-size: 40px;
+}
+#titulo-nav{
+    font-family:cursive;
+    font-style: oblique;
+    transition: 1s;
+    
+}
+#titulo-nav:hover{
+    color:green;
+    font-size: 35px;
+}
+.container a {
+    font-size: 25px;
+    font-weight: 500;
+}
+h1, h4{
+    text-decoration: underline;
+    font-family: 'Macondo', cursive;
+    
+}
+h1:hover{
+    font-size: 45px;
+    color:rosybrown;
+}
+
+ul li {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
+}
+ul li:hover{
+    font-size: 30px;
+    color:darkslategrey;
+}
+
+.ul{
+    font-weight: 900;
+    
+}
+#icon{
+    font-size: 48px;
+}
+#icon:hover{
+    font-size: 55px;
+    color: lightseagreen;
+}
+#presentacion{
+    position: relative;
+    background: white;
+    border-radius: 15px;
+    opacity: 0.9;
+    box-shadow: 2px 2px 5px darkgrey;
+    animation:mymove 5s 1;
+}
+#presentacion{animation-timing-function: ease;}
+@keyframes mymove {
+    from{left:-80%;}
+    to{left: 0%;}
+}
+#conocimientos{
+    background: linear-gradient(to bottom,#F5F5F5, grey 90%, grey);
+}
+#habilidades{
+    background: linear-gradient(to bottom, grey,#F5F5F5);
+}
+#nombre{
+    font-weight: 800;
+    color: darkslateblue;
+}
+#hobbies{
+    background:#0a1a11b7;
+}
+.card{
+    background: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    box-shadow: 2px 2px 5px black ;
+}
+.card:hover{
+    font-size: 15px;
+    border: 3px solid yellowgreen;
+    text-decoration: underline;
+}
+
+#card-hobbie:hover{
+    font-size: 15px;
+    background: #c9cac6;
+    border: 3px solid #1f4d2a;
+}
+#carousel{
+    background: grey;
+}
+.carousel-item{
+    height: 500px;
+    width: 100%;
+}
+#card-formacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#card-oi{
+    box-shadow: 5px 5px 5px darkslategrey;
+    transition: 1s;
+}
+#card-oi:hover{
+    background:lightblue;
+
+}
+#sobre-mi{
+    height: 100%;
+    background:#0a1a11b7;
+    background-size: cover;
+    color: #F5F5F5;
+}
+#sobre-mi p{
+    font-size: 25px;
+}
+#contacto{
+    background: url("../img/fondo_programa.png");
+}
+#formacion{
+    background:#0a1a11b7;
+}
+#lenguaje{
+    transition: 1s;
+}
+#lenguaje:hover{
+    background: #F5F5F5;
+}
+#experiencia{
+    background:linear-gradient(to bottom,#F5F5F5, grey);
+}
+#btn-repo:hover{
+    background:lightgrey;
+}
+#btn-actual{
+    color: black;
+    box-shadow: 3px 3px 15px #F5F5F5;
+    transition: width 1s, color 1s ;
+}
+#btn-actual:hover{
+    color: #F5F5F5;
+    background-color: lightskyblue;
+    width: 30% ;
+}
+#diapo-start{
+    box-shadow: -5px 0px 6px darkblue;
+}
+#diapo-end{
+    box-shadow: 5px 0px  6px    darkblue ;
+}
+#carusel-sm{
+    background: darkslategray;
+    height: 100%;
+}
+#contacto input{
+    background:rgb(218, 214, 214);
+    width: 100%;
+    height: 2.5em;
+    margin-top: 5px;
+    border: 0px;
+    border-bottom: 3px;
+    box-shadow: 5px 3px 8px rgb(184, 180, 180);
+}
+#servi{
+    background: none;
+}
+input::placeholder{
+color: black;
+}
+textarea{
+    background:rgb(218, 214, 214);
+    width: 100%;
+    margin-top: 5px;
+    border-bottom: 3px;
+    box-shadow: 5px 3px 8px grey;
+}
+textarea::placeholder{
+    color: black;
+}
+footer{
+    text-align: center;
+    height: 120px;
+    background:linear-gradient(to top,rgba(110, 107, 107, 0),grey);
+}
+.input-message-error{
+    color: red;
+}
+
+
+@media screen and (max-width:580px) {
+    .nav{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .card img{
+        height: 200px;
+    }
+    #presentacion{
+        opacity:1 ;
+    
+        display: none;
+    }
+    #logo-inicio, #titulo-nav, #img-contacto, #porta, #hobbies{
+        display: none;
+    }
+    #ul{
+        width:100%;
+    }
+    .carousel-item{
+        height:100%;
+        width: 100%;
+    }
+    #sobre-mi{
+        font-size: 16px;
+    }
+    #color-nav{
+        background: #1f4d2a;
+    }
+}
